@@ -1,5 +1,4 @@
 function filter(numbers, callback) {
-    console.log("callbak", callback);
     let results = [];
     for (const number of numbers) {
       if (callback(number)) {
@@ -11,7 +10,6 @@ function filter(numbers, callback) {
   
   let numbers = [1, 2, 4, 7, 3, 5, 6];
   
-  let oddNumbers = filter(numbers, (number) =>{ number % 2 != 0 ; console.log(number % 2 != 0);});
-
+  let oddNumbers = filter(numbers, (number) => number % 2 != 0);
   
   console.log(oddNumbers);
